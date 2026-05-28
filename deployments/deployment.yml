@@ -5,7 +5,7 @@ metadata:
   name: fb-deploy
   labels:
     app: facebook
-    version: v1-ac
+    version: v2-vc
     tier: frontend
     env: prod
 
@@ -15,7 +15,7 @@ spec:
   selector:
     matchLabels:
       app: facebook
-      version: v1-ac
+      version: v2-vc
       tier: frontend
       env: prod
 
@@ -36,6 +36,6 @@ spec:
     spec:
       containers:
         - name: fb-cont
-          image: nginx
+          image: devopshubg333/batch16d:pythonimg
           ports:
             - containerPort: 8080
