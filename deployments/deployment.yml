@@ -5,7 +5,7 @@ metadata:
   name: fb-deploy
   labels:
     app: facebook
-    version: v2-vc
+    version: v1-ac
     tier: frontend
     env: prod
 
@@ -15,7 +15,7 @@ spec:
   selector:
     matchLabels:
       app: facebook
-      version: v2-vc
+      version: v1-ac
       tier: frontend
       env: prod
 
@@ -29,7 +29,7 @@ spec:
     metadata:
       labels:
         app: facebook
-        version: v2-vc
+        version: v1-ac
         env: prod
         tier: frontend
 
