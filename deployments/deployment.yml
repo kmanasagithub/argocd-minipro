@@ -29,7 +29,7 @@ spec:
     metadata:
       labels:
         app: facebook
-        version: v1-ac
+        version: v2-vc
         env: prod
         tier: frontend
 
